@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JSON to YAML Converter Online Tool</title>
+        <link type="text/css" rel="stylesheet" href="style/style.css" />
+    </head>
+
+    <body>
+        <h1>JSON to YAML</h1>
+        <div class="container">
+            <div class="textAreaWrap">
+                <textarea class="textArea" id="jsonInput" placeholder="Enter JSON here"></textarea>
+            </div>
+
+            <div class="workArea">
+                <button class="convertBtn" onclick="convertToYaml()">Convert to YAML</button>
+                <button class="convertBtn" onclick="convertToJson()">Convert to JSON</button>
+            </div>
+
+            <div class="textAreaWrap">
+                <textarea class="textArea" id="yamlOutput" placeholder="YAML output will appear here"></textarea>
+            </div>
+        </div>
+
+        <script src="./js/js-yaml.min.js"></script>
+        <script>
+            function convertToJson() {
+                const yamlInput = document.getElementById('yamlOutput').value;
+                const jsonObject = jsyaml.load(yamlInput);
+                document.getElementById('jsonInput').value = JSON.stringify(jsonObject, null, 2);
+            }
+
+            function convertToYaml() {
+                const jsonInput = document.getElementById('jsonInput').value;
+                const yamlObject = jsyaml.dump(JSON.parse(jsonInput));
+                document.getElementById('yamlOutput').value = yamlObject;
+            }
+        </script>
+    </body>
+
+</html>
