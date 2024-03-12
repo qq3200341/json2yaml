@@ -29,12 +29,18 @@
         <script>
             function convertToJson() {
                 const yamlInput = document.getElementById('yamlOutput').value;
+                if (yamlInput == null || yamlInput === '') {
+                    return
+                }
                 const jsonObject = jsyaml.load(yamlInput);
                 document.getElementById('jsonInput').value = JSON.stringify(jsonObject, null, 2);
             }
 
             function convertToYaml() {
                 const jsonInput = document.getElementById('jsonInput').value;
+                if (jsonInput == null || jsonInput === '') {
+                    return
+                }
                 const yamlObject = jsyaml.dump(JSON.parse(jsonInput));
                 document.getElementById('yamlOutput').value = yamlObject;
             }
