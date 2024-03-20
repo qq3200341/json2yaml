@@ -1,0 +1,46 @@
+.container {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-navbar {
+    width: 100%;
+}
+
+.navbar-menus {
+    float: right;
+}
+
+.title {
+    flex: 1;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: #00000000;
+}
+
+.toolArea {
+    background-color: green;
+    width: 80%;
+    height: 500px;
+}
+
+.contentArea {
+    background-color: white;
+    width: 80%;
+    height: 1000px;
+}
+
+.footer {
+    background-color: green;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
