@@ -1,6 +1,6 @@
 # json2yaml
 
-json2yaml is a simple tool for converting JSON data to YAML format and vice versa. The tool is implemented using the js-yaml library and features a clean and user-friendly interface created with Bootstrap.Online demo:https://jsontoyaml.net.
+json2yaml is a simple tool for converting JSON data to YAML format and vice versa. The tool is implemented using the js-yaml library and features a clean and user-friendly interface created with Bootstrap.Online demo:[JSON to YAML](https://jsontoyaml.net).
 
 ## Features
 
@@ -23,7 +23,7 @@ You can install json2yaml by following these steps:
 
 ## Demo
 
-Try out the online demo of json2yaml [here](https://jsontoyaml.net/).
+Try out the online demo of json2yaml [JSON to YAML](https://jsontoyaml.net/).
 
 ## Contribution
 
